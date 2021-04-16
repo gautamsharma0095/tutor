@@ -12,6 +12,7 @@ require __DIR__.'/blog-tags/blog-tags.php';
 require __DIR__.'/pages/page.php';
 require __DIR__.'/students/student.php';
 require __DIR__.'/grades/grade.php';
+require __DIR__.'/subjects/subject.php';
 require __DIR__.'/faqs/faq.php';
 require __DIR__.'/email-templates/email-template.php';
 require __DIR__.'/auth/permission.php';

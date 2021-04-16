@@ -72,6 +72,17 @@
                     </a>
                 </li>
 
+                <li class="divider"></li>
+
+                <li class="nav-item">
+                    <a class="nav-link {{
+                        active_class(Route::is('admin/subjects'))
+                    }}" href="{{ route('admin.subjects.index') }}">
+                        <i class="nav-icon fab fa-buffer"></i>
+                        Subjects
+                    </a>
+                </li>
+
 
                 <li class="divider"></li>
 
