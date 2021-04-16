@@ -15,20 +15,30 @@
     <div class="row mt-4 mb-4">
         <div class="col">
             <div class="form-group row">
-                {{ Form::label('title', trans('validation.attributes.backend.access.pages.name'), ['class' => 'col-md-2 from-control-label required']) }}
+                {{ Form::label('full_name', 'Full Name', ['class' => 'col-md-2 from-control-label required']) }}
 
                 <div class="col-md-10">
-                    {{ Form::text('title', null, ['class' => 'form-control', 'placeholder' => trans('validation.attributes.backend.access.pages.name'), 'required' => 'required']) }}
+                    {{ Form::text('full_name', null, ['class' => 'form-control', 'placeholder' => 'Enter Full Name', 'required' => 'required']) }}
                 </div>
                 <!--col-->
             </div>
             <!--form-group-->
 
             <div class="form-group row">
-                {{ Form::label('page_slug', trans('validation.attributes.backend.access.pages.slug'), ['class' => 'col-md-2 from-control-label required']) }}
+                {{ Form::label('email_id', 'Email Id', ['class' => 'col-md-2 from-control-label required']) }}
 
                 <div class="col-md-10">
-                    {{ Form::text('page_slug', null, ['class' => 'form-control', 'placeholder' => trans('validation.attributes.backend.access.pages.slug'), 'disabled' => 'disabled']) }}
+                    {{ Form::text('email_id', null, ['class' => 'form-control', 'placeholder' => 'Enter Email Id']) }}
+                </div>
+                <!--col-->
+            </div>
+            <!--form-group-->
+
+            <div class="form-group row">
+                {{ Form::label('mobile_no', 'Mobile Number', ['class' => 'col-md-2 from-control-label required']) }}
+
+                <div class="col-md-10">
+                    {{ Form::text('mobile_no', null, ['class' => 'form-control', 'placeholder' => 'Mobile Number']) }}
                 </div>
                 <!--col-->
             </div>

@@ -61,6 +61,28 @@
                         </li>
                     </ul>
                 </li>
+                <li class="divider"></li>
+
+                <li class="nav-item">
+                    <a class="nav-link {{
+                        active_class(Route::is('admin/grades'))
+                    }}" href="{{ route('admin.grades.index') }}">
+                        <i class="nav-icon fas fa-file"></i>
+                        Grades
+                    </a>
+                </li>
+
+
+                <li class="divider"></li>
+
+                <li class="nav-item">
+                    <a class="nav-link {{
+                        active_class(Route::is('admin/students'))
+                    }}" href="{{ route('admin.students.index') }}">
+                        <i class="nav-icon fas fa-file"></i>
+                        Students
+                    </a>
+                </li>
 
                 <li class="divider"></li>
 
@@ -124,7 +146,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link {{ active_class(Route::is('admin/blogs')) }}" 
+                            <a class="nav-link {{ active_class(Route::is('admin/blogs')) }}"
                                 href="{{ route('admin.blogs.index') }}">
                                 @lang('labels.backend.access.blogs.management')
                             </a>

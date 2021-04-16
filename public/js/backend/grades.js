@@ -1,6 +1,6 @@
 (function () {
 
-    FTX.Pages = {
+    FTX.Grades = {
 
         list: {
 
@@ -21,9 +21,7 @@
                     },
                     columns: [
 
-                        { data: 'title', name: 'title' },
-                        { data: 'status', name: 'status' },
-                        { data: 'created_by', name: 'created_by' },
+                        { data: 'name', name: 'name' },
                         { data: 'created_at', name: 'created_at' },
                         { data: 'actions', name: 'actions', searchable: false, sortable: false }
 

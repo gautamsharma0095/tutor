@@ -2,7 +2,7 @@
 
 namespace App\Models\Traits\Attributes;
 
-trait PageAttributes
+trait StudentAttributes
 {
     /**
      * @return string
@@ -10,8 +10,8 @@ trait PageAttributes
     public function getActionButtonsAttribute()
     {
         return '<div class="btn-group action-btn">
-                    '.$this->getEditButtonAttribute('edit-page', 'admin.pages.edit').'
-                    '.$this->getDeleteButtonAttribute('delete-page', 'admin.pages.destroy').'
+                    '.$this->getEditButtonAttribute('edit-page', 'admin.students.edit').'
+                    '.$this->getDeleteButtonAttribute('delete-page', 'admin.students.destroy').'
                 </div>';
     }
 
@@ -20,7 +20,7 @@ trait PageAttributes
      */
     public function getViewButtonAttribute()
     {
-        return '<a target="_blank" href="'.route('frontend.pages.show', $this->page_slug).'" class="btn btn-flat btn-default">
+        return '<a target="_blank" href="'.route('frontend.students.show', $this->page_slug).'" class="btn btn-flat btn-default">
                     <i data-toggle="tooltip" data-placement="top" title="View Page" class="fa fa-eye"></i>
                 </a>';
     }
