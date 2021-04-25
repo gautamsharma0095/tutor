@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-sm-5">
             <h4 class="card-title mb-0">
-                {{ __('labels.backend.access.pages.management') }}
-                <small class="text-muted">{{ (isset($page)) ? __('labels.backend.access.pages.edit') : __('labels.backend.access.pages.create') }}</small>
+                Student Management
+                <small class="text-muted">{{ (isset($page)) ? "Edit Student" : "Create Student" }}</small>
             </h4>
         </div>
         <!--col-->

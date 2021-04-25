@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Responses\Backend\Blog;
+namespace App\Http\Responses\Backend\Blogs;
 
 use Illuminate\Contracts\Support\Responsable;
 

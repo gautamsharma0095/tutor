@@ -12,6 +12,7 @@ use App\Http\Requests\Backend\Pages\UpdatePageRequest;
 use App\Http\Responses\Backend\Page\EditResponse;
 use App\Http\Responses\RedirectResponse;
 use App\Http\Responses\ViewResponse;
+use App\Models\Grade;
 use App\Models\Page;
 use App\Repositories\Backend\PagesRepository;
 use Illuminate\Support\Facades\View;
@@ -39,6 +40,7 @@ class StudentsController extends Controller
      */
     public function index(ManagePageRequest $request)
     {
+
         return new ViewResponse('backend.students.index');
     }
 
@@ -49,7 +51,9 @@ class StudentsController extends Controller
      */
     public function create(CreatePageRequest $request)
     {
-        return new ViewResponse('backend.students.create');
+        $grades = Grade::getSelectData();
+        dd($grades);
+        return new ViewResponse('backend.students.create',['grades' => $grades]);
     }
 
     /**

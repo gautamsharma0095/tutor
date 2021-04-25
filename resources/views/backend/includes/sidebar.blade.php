@@ -90,7 +90,7 @@
                     <a class="nav-link {{
                         active_class(Route::is('admin/students'))
                     }}" href="{{ route('admin.students.index') }}">
-                        <i class="nav-icon fas fa-file"></i>
+                        <i class="nav-icon fas fa-user-graduate"></i>
                         Students
                     </a>
                 </li>
